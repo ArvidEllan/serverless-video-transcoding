@@ -37,3 +37,23 @@ def lambda_handler(event, context):
             'statusCode': 500,
             'body': json.dumps({'message': str(e)})
         }
+
+
+
+        ##### Test JSON Response  from Rekognition #####
+        {
+    "Label": {
+        "Aliases": [],
+        "Categories": [
+            {
+                "Name": "Public Safety"
+            }
+        ],
+        "Confidence": 78.67972564697266,
+        "Instances": [],
+        "Name": "Fire",
+        "Parents": []
+    },
+    "Timestamp": 4000
+}
+#########
